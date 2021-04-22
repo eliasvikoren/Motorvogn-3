@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Motorvogn register</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="index.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <form>
+                <h2>Motorvognregister</h2>
+
+                <div class="form-group">
+                    <label for="input-personnummer">Person nummer</label>
+                    <input type="text" id="input-personnummer" class="form-control">
+                    <div id="error-personnummer"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="input-navn">Navn</label>
+                    <input type="text" id="input-navn" class="form-control">
+                    <div id="error-navn"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="input-adresse">Adresse</label>
+                    <input type="text" id="input-adresse" class="form-control">
+                    <div id="error-adresse"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="input-kjennetegn">Kjennetegn</label>
+                    <input type="text" id="input-kjennetegn" class="form-control">
+                    <div id="error-kjennetegn"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="input-bilmerke">Merke</label>
+                    <div id="input-bilmerke" class="dropdown"></div>
+                    <div id="error-bilmerke"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="input-biltype">Type</label>
+                    <div id="input-biltype" class="dropdown"></div>
+                    <div id="error-biltype"></div>
+                </div>
+
+            </form>
+
+            <button class="btn btn-primary" onclick="registrerMotorvogn()">Registrer / Vis register</button>
+
+            <div id="feil"></div>
+
+        </div>
+
+        <div class="col-md-8">
+            <div id="utboks"></div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
