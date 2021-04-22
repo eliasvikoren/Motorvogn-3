@@ -107,7 +107,7 @@ function finnTyper(){
 }
 
 function formaterTyper(biler,valgtMerke){
-    let ut = "<select class='form-control' id='valgtType'>";
+    let ut = "<label for='input-biltype'>Type</label><select class='form-control' id='valgtType'>";
     for(const bil of biler){
         if(bil.merke === valgtMerke){
             ut += "<option>"+bil.type+"</option>";
